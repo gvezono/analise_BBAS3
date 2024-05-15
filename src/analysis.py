@@ -4,7 +4,7 @@ import pandas as pd
 
 def fetch_stock_data(ticker):
     stock = yf.Ticker(f"{ticker}.SA")
-    hist = stock.history(period="3mo")  # Carrega dados dos últimos três meses para garantir cobertura suficiente
+    hist = stock.history(period="3mo")  # Carrega dados dos últimos três meses, para garantir cobertura suficiente
     return hist['Close'].tail(60)  # Seleciona apenas os últimos 60 dias úteis
 
 def calculate_rsi(data, window=14):
