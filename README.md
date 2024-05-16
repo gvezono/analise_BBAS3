@@ -21,7 +21,7 @@ Antes de iniciar, certifique-se de ter o Python instalado em sua máquina. Este 
 Para configurar este projeto, siga as instruções abaixo:
 
 1. Clone o repositório para sua máquina local:
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/gvezono/analise_BBAS3.git
 2. Navegue até o diretório do projeto:
 cd analise_BBAS3
 3. Crie um ambiente virtual:
@@ -31,26 +31,32 @@ python -m venv venv
   ```
   .\venv\Scripts\activate
   ```
+- Se der erro de permissão, digite antes:
+  ```
+  Set-ExecutionPolicy RemoteSigned
+  ```
 - macOS/Linux:
   ```
   source venv/bin/activate
   ```
 5. Instale as dependências do projeto:
-pip install -r requirements.txt
+  ```
+  pip install -r requirements.txt
+  ```
 
 ## Uso
 
 Para executar o script de análise, utilize o comando:
+```
 python src/analysis.py
+```
 
 Os gráficos gerados e a recomendação de compra serão exibidos conforme definido no script.
 
 ## Contribuindo
 
-Contribuições são sempre bem-vindas! Sinta-se à vontade para forkar o projeto, fazer melhorias e criar um pull request. Se você encontrar algum problema, por favor, abra uma issue no repositório do GitHub.
+Contribuições são sempre bem-vindas! Sinta-se à vontade para dar um fork no projeto, fazer melhorias e lançar as pull requests. Se você encontrar algum problema, lança a issue.
 
 ## Contato
 
 Gabriel Vezono – gvezono@gmail.com
-
-Link do Projeto: https://github.com/gvezono/analise_BBAS3.git
